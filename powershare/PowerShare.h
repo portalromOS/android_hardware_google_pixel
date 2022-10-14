@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2022 The Portal Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
 
 #pragma once
 
-#include <vendor/lineage/powershare/1.0/IPowerShare.h>
+#include <vendor/portalrom/powershare/1.0/IPowerShare.h>
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 
-namespace vendor::lineage::powershare::pixel {
+namespace vendor::portalrom::powershare::pixel {
 
 using ::android::hardware::hidl_array;
 using ::android::hardware::hidl_memory;
@@ -31,11 +31,11 @@ using ::android::hardware::Void;
 using ::android::sp;
 
 struct PowerShare : public V1_0::IPowerShare {
-    // Methods from ::vendor::lineage::powershare::V1_0::IPowerShare follow.
+    // Methods from ::vendor::portalrom::powershare::V1_0::IPowerShare follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enable) override;
     Return<uint32_t> getMinBattery() override;
     Return<uint32_t> setMinBattery(uint32_t minBattery) override;
 };
 
-}  // namespace vendor::lineage::powershare::pixel
+}  // namespace vendor::portalrom::powershare::pixel

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2022 The Portal Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.powershare@1.0-service.pixel"
+#define LOG_TAG "vendor.portalrom.powershare@1.0-service.pixel"
 
 #include <android-base/logging.h>
 #include <binder/ProcessState.h>
@@ -28,7 +28,7 @@ using android::sp;
 using android::status_t;
 using android::OK;
 
-using ::vendor::lineage::powershare::pixel::PowerShare;
+using ::vendor::portalrom::powershare::pixel::PowerShare;
 
 int main() {
     sp<PowerShare> powerShare;

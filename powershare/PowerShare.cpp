@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2021 The LineageOS Project
+ * Copyright (C) 2022 The Portal Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -38,7 +38,7 @@ static T get(const std::string& path, const T& def) {
     return file.fail() ? def : result;
 }
 
-namespace vendor::lineage::powershare::pixel {
+namespace vendor::portalrom::powershare::pixel {
 
 Return<bool> PowerShare::isEnabled() {
     return get(RTX_ENABLE_PATH, 0) == 1;
@@ -57,4 +57,4 @@ Return<uint32_t> PowerShare::setMinBattery(uint32_t) {
     return 0;
 }
 
-}  // namespace vendor::lineage::powershare::pixel
+}  // namespace vendor::portalrom::powershare::pixel

@@ -1,4 +1,4 @@
-// Copyright (C) 2021 The LineageOS Project
+// Copyright (C) 2022 The Portal Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -13,9 +13,9 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.powershare@1.0-service.pixel",
-    vintf_fragments: ["vendor.lineage.powershare@1.0-service.pixel.xml"],
-    init_rc: ["vendor.lineage.powershare@1.0-service.pixel.rc"],
+    name: "vendor.portalrom.powershare@1.0-service.pixel",
+    vintf_fragments: ["vendor.portalrom.powershare@1.0-service.pixel.xml"],
+    init_rc: ["vendor.portalrom.powershare@1.0-service.pixel.rc"],
     relative_install_path: "hw",
 
     vendor: true,
@@ -28,6 +28,6 @@ cc_binary {
         "libbinder",
         "libhidlbase",
         "libutils",
-        "vendor.lineage.powershare@1.0",
+        "vendor.portalrom.powershare@1.0",
     ],
 }
